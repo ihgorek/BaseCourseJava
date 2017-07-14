@@ -45,7 +45,7 @@ public final class ComplexNumber {
         a = Double.doubleToLongBits(re);
         ans = (int) (a ^ (a >>> 32));
         a = Double.doubleToLongBits(im);
-        ans = 31 * result + (int) (a ^ (a >>> 32));
+        ans = 31 * ans + (int) (a ^ (a >>> 32));
         return ans;
     }
 
