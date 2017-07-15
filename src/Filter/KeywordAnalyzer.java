@@ -5,9 +5,10 @@ package Filter;
  */
 public abstract class KeywordAnalyzer implements TextAnalyzer {
 
-    abstract Label getLabel();
-    abstract String[] getKeywords();
+    protected abstract Label getLabel();
+    protected abstract String[] getKeywords();
 
-
-
+    public Label processText(String text) {
+        return null;
+    }
 }
